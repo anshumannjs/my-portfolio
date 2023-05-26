@@ -79,7 +79,7 @@ export default function ProjectCard1(props) {
                     {
                         imgArr.map((x,i)=>{
                             return(
-                                <SwiperSlide> <img src={imgArr[i]} alt="" className='h-[100%]'/> </SwiperSlide>
+                                <SwiperSlide> <img src={imgArr[i]} alt="" className='w-[100%]'/> </SwiperSlide>
                             )
                         })
                     }
