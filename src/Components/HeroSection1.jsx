@@ -7,15 +7,18 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 export default function HeroSection1() {
   const [link,setLink]=useState('');
 
+  function handleContact(){
+    document.getElementById('contact').scrollIntoView({behavior:'smooth',block:'center'});
+  }
 
   return (
-    <div className='h-[100vh] shadow-xl' style={{ backgroundImage: `url(${HeroImg})`, backgroundSize: 'cover' }}>
+    <div id='intro' className='h-[100vh] shadow-xl shadow-cyan-400' style={{ backgroundImage: `url(${HeroImg})`, backgroundSize: 'cover' }}>
       <div className='absolute top-[50%] left-5 md:left-10 text-base md:text-4xl'>
       <div className='text-white font-bold'>
         Hello,
       </div>
       <div className='text-white font-bold'>
-        I am <span className='text-cyan-400'>
+        I am <span className='bg-gradient-to-r from-cyan-500 to-blue-500 text-transparent bg-clip-text'>
           <TypeAnimation
           sequence={[
             'Anshuman',
@@ -29,7 +32,7 @@ export default function HeroSection1() {
       </div>
       <div className='text-white font-bold'>Front End Developer</div>
 
-      <button className={`p-2 border border-white rounded-md hover:border-cyan-500 hover:text-cyan-500 cursor-pointer text-white mt-5 text-base`}>
+      <button onClick={handleContact} className={`p-2 border border-white rounded-md hover:scale-110 hover:border-cyan-500 hover:text-cyan-500 cursor-pointer text-white mt-5 text-base`}>
         Contact Me
       </button>
       </div>

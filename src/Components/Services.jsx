@@ -5,8 +5,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export default function SkillsServices1() {
   return (
-    <div className='w-[90%] mx-auto border border-black rounded-md shadow-xl mt-10 text-white bg-black'>
-      <h1 className='text-center mx-auto font-bold text-2xl text-cyan-500'>
+    <div id='service' className='w-[90%] mx-auto border border-black rounded-md shadow-lg shadow-cyan-400 mt-20 text-white bg-black'>
+      <h1 className='text-center mx-auto font-bold text-2xl text-cyan-400'>
         My Services
       </h1>
 

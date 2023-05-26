@@ -34,6 +34,10 @@ const Navbar = () => {
         }
     }
 
+    function routing(str){
+        document.getElementById(str).scrollIntoView({behavior:'smooth',block:'center'});
+    }
+
     return (
         <>
             <nav className='p-2 flex items-center justify-between w-[100%] bg-transparent fixed shadow-sm text-white z-20 backdrop-blur-md'>
@@ -48,19 +52,19 @@ const Navbar = () => {
                 </div>
                 <div className='flex space-x-2.5 lg:space-x-4 mr-3'>
                     <ul className='hidden sm:flex space-x-3 items-center text-lg font-semibold text-cyan-500'>
-                        <li className='cursor-pointer' style={{ navLinkStyles }}>
+                        <li className='cursor-pointer' style={{ navLinkStyles }} onClick={()=>{routing("intro")}}>
                             Intro
                         </li>
-                        <li className='cursor-pointer' style={{ navLinkStyles }}>
+                        <li className='cursor-pointer' style={{ navLinkStyles }} onClick={()=>{routing("about")}}>
                             About
                         </li>
-                        <li className="cursor-pointer" style={{ navLinkStyles }}>
-                            Services
-                        </li>
-                        <li className='cursor-pointer' style={{ navLinkStyles }}>
+                        <li className='cursor-pointer' style={{ navLinkStyles }} onClick={()=>{routing("project")}}>
                             Projects
                         </li>
-                        <li className='cursor-pointer' style={{ navLinkStyles }}>
+                        <li className="cursor-pointer" style={{ navLinkStyles }} onClick={()=>{routing("service")}}>
+                            Services
+                        </li>
+                        <li className='cursor-pointer' style={{ navLinkStyles }} onClick={()=>{routing("contact")}}>
                             Contact
                         </li>
                     </ul>

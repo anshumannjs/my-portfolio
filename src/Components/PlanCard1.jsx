@@ -3,7 +3,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCircleCheck } from '@fortawesome/free-solid-svg-icons'
 
 export default function PlanCard1(props) {
-    console.log(props)
     return (
         <div className='bg-black w-[80vw] md:w-[30vw] space-y-5 md:space-y-14 rounded-xl p-3 mx-auto md:mx-0'>
             <div>
