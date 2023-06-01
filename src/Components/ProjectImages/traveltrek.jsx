@@ -14,8 +14,10 @@ const obj={
         img1,img2,img3,img4,img5,img6,img7
     },
     title:"Travel & Trek",
-    desc:"",
-    tools:{FaReact,SiTailwindcss,SiRedux,SiLeaflet}
+    desc:"It is a site where you can explore various tourists places using map feature integrated in this site. You can search up the location using map and see about it. I made it using React, Tailwind Css, Leaflet-react,Redux Toolkit.",
+    tools:{FaReact,SiTailwindcss,SiRedux,SiLeaflet},
+    github:'https://github.com/anshumannjs/travel',
+    link:'https://anshumannjs.github.io/travel'
 }
 
 export default obj

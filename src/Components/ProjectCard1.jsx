@@ -79,25 +79,24 @@ export default function ProjectCard1(props) {
                     {
                         imgArr.map((x,i)=>{
                             return(
-                                <SwiperSlide> <img src={imgArr[i]} alt="" className='w-[100%]'/> </SwiperSlide>
+                                <SwiperSlide> <img src={imgArr[i]} alt="" className='w-[100%] md:h-[100%]'/> </SwiperSlide>
                             )
                         })
                     }
                 </Swiper>
 
 
-                <div className="flex flex-col justify-start md:w-[45vw] p-5 md:p-10">
+                <div className="flex flex-col justify-start md:w-[45vw] h-[50vh] md:h-auto p-5 md:p-10">
                     <h5 className="mb-2 text-xl font-bold text-center text-cyan-400 dark:text-neutral-50">
                         {currObj.title}
                     </h5>
-                    <p className="mb-4 text-base text-neutral-600 dark:text-neutral-200 md:mt-[10%]">
-                        This is a wider card with supporting text below as a natural
-                        lead-in to additional content. This content is a little bit
-                        longer.
+                    <p className="mb-4 text-base text-neutral-600 dark:text-neutral-200 md:mt-[5%]">
+                        {currObj.desc}
                     </p>
 
-                    <div className='flex w-full justify-between md:mt-[10%]'>
-                        <div className='w-[50%] space-y-4'>
+                    <div className='absolute bottom-14 w-[90vw] md:w-[40vw]'>
+                    <div className='flex w-full justify-between'>
+                        <div className='w-[70%] space-y-4'>
                             <div className='font-bold'>
                                 Tools
                             </div>
@@ -115,16 +114,17 @@ export default function ProjectCard1(props) {
                             </div>
                         </div>
 
-                        <div className='w-[50%] space-y-4'>
-                            <div className='mx-auto text-center font-bold'>
+                        <div className='w-[30%] space-y-4'>
+                            <div className='font-bold'>
                                 Links
                             </div>
 
-                            <div className='flex justify-center'>
-                                <FontAwesomeIcon icon={faGithub} className='mr-5' />
-                                <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
+                            <div className='flex space-x-5'>
+                                <FontAwesomeIcon icon={faGithub} className='hover:cursor-pointer' onClick={()=>{window.open(currObj.github,'_blank')}}/>
+                                <FontAwesomeIcon icon={faArrowUpRightFromSquare} className='hover:cursor-pointer' onClick={()=>{window.open(currObj.link,'_blank')}}/>
                             </div>
                         </div>
+                    </div>
                     </div>
                 </div>
 

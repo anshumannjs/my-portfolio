@@ -10,7 +10,7 @@ const obj={
         img1,img2,img3,img4
     },
     title:"Notary Booking",
-    desc:"",
+    desc:"It is an application page for hiring Notaries. It has form validation method implemented in it. I made it using React, Tailwind Css, Redux Toolkit.",
     tools:{FaReact,SiRedux,SiTailwindcss}
 }
 

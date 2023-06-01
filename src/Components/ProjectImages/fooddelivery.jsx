@@ -7,8 +7,10 @@ const obj={
         img1
     },
     title:"Food Delivery Site",
-    desc:"",
-    tools:{FaHtml5,FaCss3,SiJavascript}
+    desc:"This is a demo version of a food delivery website. I made it using Html, Css & Javascript.",
+    tools:{FaHtml5,FaCss3,SiJavascript},
+    github:'https://github.com/anshumannjs/FoodDeliverySite',
+    link:''
 }
 
 export default obj

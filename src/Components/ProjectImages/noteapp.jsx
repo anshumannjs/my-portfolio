@@ -8,8 +8,10 @@ const obj={
         img1,img2
     },
     title:"Note Keeping App",
-    desc:"",
-    tools:{FaReact,SiRedux,SiTailwindcss}
+    desc:"It is a simple web application to keep notes and set to-do lists. It saves and loads your note even if you are disconnected from your internet. I made it using React, Tailwind Css, Redux Toolkit.",
+    tools:{FaReact,SiRedux,SiTailwindcss},
+    github:'https://github.com/anshumannjs/note-app',
+    link:'https://anshumannjs.github.io/note-app'
 }
 
 export default obj

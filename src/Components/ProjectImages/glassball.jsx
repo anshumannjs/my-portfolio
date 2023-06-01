@@ -15,8 +15,10 @@ const obj={
         img1,img2,img3,img4,img5,img6,img7,img8
     },
     title:"Glass Ball",
-    desc:"Glassball is a Windows-based desktop Application, that connects with Tally. This is the website i made for them as part of my internship. I made it using react and tailwindcss",
-    tools:{FaReact,SiTailwindcss}
+    desc:"Glassball is a Windows-based desktop Application, that connects with Tally. This is the website i made for them as part of my internship. I made it using react and tailwindcss.",
+    tools:{FaReact,SiTailwindcss},
+    github:'https://github.com/anshumannjs/tally-landing',
+    link:'https://anshumannjs.github.io/tally-landing/'
 }
 
 export default obj
