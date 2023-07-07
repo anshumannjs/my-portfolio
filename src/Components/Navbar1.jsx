@@ -34,8 +34,8 @@ const Navbar = () => {
         }
     }
 
-    function routing(str){
-        document.getElementById(str).scrollIntoView({behavior:'smooth',block:'center'});
+    function routing(str) {
+        document.getElementById(str).scrollIntoView({ behavior: 'smooth', block: 'center' });
     }
 
     return (
@@ -52,19 +52,19 @@ const Navbar = () => {
                 </div>
                 <div className='flex space-x-2.5 lg:space-x-4 mr-3'>
                     <ul className='hidden sm:flex space-x-3 items-center text-lg font-semibold text-cyan-500'>
-                        <li className='cursor-pointer' style={{ navLinkStyles }} onClick={()=>{routing("intro")}}>
+                        <li className='cursor-pointer' style={{ navLinkStyles }} onClick={() => { routing("intro") }}>
                             Intro
                         </li>
-                        <li className='cursor-pointer' style={{ navLinkStyles }} onClick={()=>{routing("about")}}>
+                        <li className='cursor-pointer' style={{ navLinkStyles }} onClick={() => { routing("about") }}>
                             About
                         </li>
-                        <li className='cursor-pointer' style={{ navLinkStyles }} onClick={()=>{routing("project")}}>
+                        <li className='cursor-pointer' style={{ navLinkStyles }} onClick={() => { routing("project") }}>
                             Projects
                         </li>
-                        <li className="cursor-pointer" style={{ navLinkStyles }} onClick={()=>{routing("service")}}>
+                        <li className="cursor-pointer" style={{ navLinkStyles }} onClick={() => { routing("service") }}>
                             Services
                         </li>
-                        <li className='cursor-pointer' style={{ navLinkStyles }} onClick={()=>{routing("contact")}}>
+                        <li className='cursor-pointer' style={{ navLinkStyles }} onClick={() => { routing("contact") }}>
                             Contact
                         </li>
                     </ul>
@@ -73,7 +73,7 @@ const Navbar = () => {
             {showMenu &&
                 <motion.div className='bg-black/70 fixed top-0 w-full h-full ease-in-out duration-500 z-30' onClick={handleClick}>
                     <motion.aside
-                        className='bg-white h-full w-3/4 py-3 px-3 absolute left-0 ease-in-out'
+                        className='bg-black text-cyan-500 h-full w-3/4 py-3 px-3 absolute left-0 ease-in-out'
                         animate={{ width: '75%' }}
                         initial={{ width: 0 }}
                         transition={{ duration: 0.4 }}
@@ -87,19 +87,19 @@ const Navbar = () => {
                             </div>
                         </motion.div>
                         <motion.ul className='text-lg my-6 space-y-3 font-semibold flex flex-col'>
-                            <li className='cursor-pointer' style={{ navLinkStyles }}>
+                            <li className='cursor-pointer' style={{ navLinkStyles }} onClick={() => { routing("intro") }}>
                                 Intro
                             </li>
-                            <li className='cursor-pointer' style={{ navLinkStyles }}>
+                            <li className='cursor-pointer' style={{ navLinkStyles }} onClick={() => { routing("about") }}>
                                 About
                             </li>
-                            <li className="cursor-pointer" style={{ navLinkStyles }}>
-                                Services
-                            </li>
-                            <li className='cursor-pointer' style={{ navLinkStyles }}>
+                            <li className='cursor-pointer' style={{ navLinkStyles }} onClick={() => { routing("project") }}>
                                 Projects
                             </li>
-                            <li className='cursor-pointer' style={{ navLinkStyles }}>
+                            <li className="cursor-pointer" style={{ navLinkStyles }} onClick={() => { routing("service") }}>
+                                Services
+                            </li>
+                            <li className='cursor-pointer' style={{ navLinkStyles }} onClick={() => { routing("contact") }}>
                                 Contact
                             </li>
                         </motion.ul>
