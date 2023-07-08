@@ -8,10 +8,11 @@ import "swiper/css/pagination"
 
 export default function ProjectSlider() {
 
-    const projectArr=['glassball','notarybooking','traveltrek','noteapp','newsnjs','fooddelivery'];
+    const projectArr=['glassball','notarybooking','WebsiteBuilder','traveltrek','noteapp','newsnjs','fooddelivery'];
 
   return (
     <div id='project' className='mb-10 mt-20'>
+      <h1 className='mx-auto text-center text-cyan-400 font-bold text-4xl mb-5'>My Projects</h1>
         <Swiper
             className=''
             modules={[Navigation,Pagination]}
