@@ -9,6 +9,7 @@ import notarybooking from './ProjectImages/notarybooking'
 import noteapp from './ProjectImages/noteapp'
 import traveltrek from './ProjectImages/traveltrek'
 import WebsiteBuilder from './ProjectImages/WebsiteBuilder'
+import decodedevs from "./ProjectImages/decodedevs"
 import {Swiper,SwiperSlide} from 'swiper/react';
 import { Navigation,Pagination } from 'swiper';
 import "swiper/css"
@@ -17,7 +18,7 @@ import "swiper/css/pagination"
 import { FaReact } from 'react-icons/fa';
 
 export default function ProjectCard1(props) {
-    const projectObj={glassball,fooddelivery,newsnjs,notarybooking,noteapp,traveltrek,WebsiteBuilder};
+    const projectObj={glassball,fooddelivery,newsnjs,notarybooking,noteapp,traveltrek,WebsiteBuilder,decodedevs};
     let currObj=projectObj[props.project];
     let imgArr=Object.values(Object.values(currObj)[0]);
     let icons=Object.values(Object.values(currObj)[3]);

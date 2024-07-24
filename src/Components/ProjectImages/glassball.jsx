@@ -18,7 +18,7 @@ const obj={
     desc:"Glassball is a Windows-based desktop Application, that connects with Tally. This is the website i made for them as part of my internship. I made it using react and tailwindcss.",
     tools:{FaReact,SiTailwindcss},
     github:'https://github.com/anshumannjs/tally-landing',
-    link:'https://anshumannjs.github.io/tally-landing/'
+    link:'https://tally-landing.vercel.app/'
 }
 
 export default obj

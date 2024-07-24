@@ -8,7 +8,7 @@ export default function About() {
         <div className='w-[100%] mx-auto text-center'>
             My name is 
             <span className='bg-gradient-to-r from-cyan-500 to-blue-500 text-transparent bg-clip-text font-bold text-lg'> Anshuman Narendra Jit Singh</span>.
-            I am 19 years old. I live in Bhubaneswar,Odisha,India. i am a self taught developer
+            I am 20 years old. I live in Bhubaneswar,Odisha,India. i am a self taught developer
         </div>
 
         <div className='w-[100%] mx-auto text-center'>
